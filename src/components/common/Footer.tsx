@@ -1,23 +1,105 @@
+import {
+  companyColumns,
+  socialLinks,
+  solutionsColumns,
+  type FooterColumn,
+} from "@/constants";
+import Image from "next/image";
 import Link from "next/link";
 
-export const Footer = () => {
+function FooterColumnBlock({ column }: { column: FooterColumn }) {
   return (
-    <footer className="border-t py-12">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
-          <h3 className="text-xl font-bold">PracticeFlow</h3>
+    <div>
+      <h3 className="mb-3 text-[16px] font-bold text-blue-500">
+        {column.title}
+      </h3>
+      <ul className="space-y-2">
+        {column.links.map((link) => (
+          <li key={link.label}>
+            <Link
+              href={link.href}
+              className="text-[16px] text-white transition-colors hover:text-white"
+            >
+              {link.label}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
 
-          <div className="flex gap-6">
-            <Link href="/about">About</Link>
-            <Link href="/contact">Contact</Link>
-            <Link href="/blog">Blog</Link>
-          </div>
+export function Footer() {
+  return (
+    <footer className="bg-[#191E4A] w-full text-white">
+      {/* Pre-footer CTA strip */}
+
+      <div className="mx-auto max-w-300 px-6 py-12">
+        <h2 className="mb-6 text-xl font-bold uppercase tracking-wider text-[#9B4CDB]">
+          Our Company
+        </h2>
+        <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-7">
+          {companyColumns.map((column) => (
+            <FooterColumnBlock key={column.title} column={column} />
+          ))}
         </div>
 
-        <p className="mt-8 text-center text-sm text-muted-foreground">
-          © 2026 PracticeFlow. All rights reserved.
+        <h2 className="mb-6 text-xl pt-6 font-bold uppercase tracking-wider text-[#9B4CDB]">
+          Our Solutions
+        </h2>
+        <div className="flex flex-wrap gap-8">
+          {solutionsColumns.map((column) => (
+            <FooterColumnBlock key={column.title} column={column} />
+          ))}
+        </div>
+      </div>
+
+      {/* Bottom bar */}
+      <div className="mx-auto flex max-w-7xl flex-col items-center gap-6 px-6 py-10">
+        {/* Gradient divider + social icons */}
+        <div className="flex w-full max-w-md min-w-full items-center gap-5">
+          <span
+            aria-hidden
+            className="h-0 flex-1 border-b-[3px] [border-image-slice:1] [border-image-source:linear-gradient(154deg,#1B2A55_0%,#9B4CDB_100%,#1B2A55_100%)]"
+          />
+          <div className="flex items-center gap-4">
+            {socialLinks.map((social) => (
+              <Link
+                key={social.label}
+                href={social.href}
+                aria-label={social.label}
+                className="opacity-90 transition-opacity hover:opacity-100"
+              >
+                <Image
+                  src={social.iconSrc}
+                  alt={social.label}
+                  width={20}
+                  height={20}
+                />
+              </Link>
+            ))}
+          </div>
+          <span
+            aria-hidden
+            className="h-0 flex-1 border-b-[3px] [border-image-slice:1] [border-image-source:linear-gradient(335deg,#1B2A55_0%,#9B4CDB_100%,#1B2A55_100%)]"
+          />
+        </div>
+
+        {/* Logo */}
+        <Image
+          src="https://practicenumbers.com/wp-content/uploads/2025/11/Group-13.svg"
+          alt="Practice by Numbers"
+          width={112}
+          height={40}
+          className="max-sm:w-28 max-sm:h-10 w-54 h-19.5"
+        />
+
+        {/* Copyright */}
+        <p className="text-center text-xs sm:text-base leading-relaxed text-white">
+          Copyright © {new Date().getFullYear()}. PracticebyNumbers. All rights
+          reserved.
         </p>
       </div>
     </footer>
   );
-};
+}
