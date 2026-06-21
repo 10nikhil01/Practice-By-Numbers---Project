@@ -1,8 +1,9 @@
+import { Footer } from "@/components/common/Footer";
 import { cn } from "@/lib/utils";
 import "@/styles/globals.css";
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
-import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -30,7 +31,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={cn(
-        "h-full",
+        "dark h-full",
         "antialiased",
         geistSans.variable,
         geistMono.variable,
@@ -39,8 +40,9 @@ export default function RootLayout({
       )}
     >
       <body className="min-h-full flex flex-col">
-        <Analytics debug />
-        {children}
+          <Analytics debug />
+          {children}
+          <Footer />
       </body>
     </html>
   );
