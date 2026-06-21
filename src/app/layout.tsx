@@ -1,4 +1,5 @@
 import { Footer } from "@/components/common/Footer";
+import { Header } from "@/components/common/Header";
 import { cn } from "@/lib/utils";
 import "@/styles/globals.css";
 import { Analytics } from "@vercel/analytics/next";
@@ -35,12 +36,12 @@ export default function RootLayout({
         "antialiased",
         geistSans.variable,
         geistMono.variable,
-        "font-sans",
         inter.variable,
       )}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full w-full flex flex-col items-center justify-center align-middle">
         <Analytics debug />
+        <Header />
         {children}
         <Footer />
       </body>
