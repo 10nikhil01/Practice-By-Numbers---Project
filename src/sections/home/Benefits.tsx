@@ -13,17 +13,13 @@ export const Benefits = () => {
             </h2>
 
             <p className="mt-4 text-muted-foreground">
-              Focus on patients while automation handles the
-              repetitive work.
+              Focus on patients while automation handles the repetitive work.
             </p>
           </div>
 
           <div className="space-y-6">
             {benefits.map((benefit) => (
-              <div
-                key={benefit}
-                className="flex items-center gap-4"
-              >
+              <div key={benefit} className="flex items-center gap-4">
                 <CheckCircle2 className="size-5 text-primary" />
 
                 <span>{benefit}</span>

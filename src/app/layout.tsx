@@ -40,9 +40,9 @@ export default function RootLayout({
       )}
     >
       <body className="min-h-full flex flex-col">
-          <Analytics debug />
-          {children}
-          <Footer />
+        <Analytics debug />
+        {children}
+        <Footer />
       </body>
     </html>
   );

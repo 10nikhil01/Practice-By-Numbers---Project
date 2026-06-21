@@ -1,20 +1,13 @@
 import { features } from "@/constants/home";
 
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const Features = () => {
   return (
     <section className="py-24">
       <div className="container mx-auto px-4">
         <div className="mx-auto mb-16 max-w-2xl text-center">
-          <h2 className="text-4xl font-bold">
-            Everything You Need To Grow
-          </h2>
+          <h2 className="text-4xl font-bold">Everything You Need To Grow</h2>
 
           <p className="mt-4 text-muted-foreground">
             Powerful tools built for modern dental practices.
@@ -29,9 +22,7 @@ export const Features = () => {
               </CardHeader>
 
               <CardContent>
-                <p className="text-muted-foreground">
-                  {feature.description}
-                </p>
+                <p className="text-muted-foreground">{feature.description}</p>
               </CardContent>
             </Card>
           ))}
