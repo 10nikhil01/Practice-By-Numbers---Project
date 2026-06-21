@@ -39,7 +39,7 @@ export default function RootLayout({
       )}
     >
       <body className="min-h-full flex flex-col">
-        <Analytics mode="production"/>
+        <Analytics debug />
         {children}
       </body>
     </html>
