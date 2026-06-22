@@ -1,10 +1,15 @@
-import { User } from "lucide-react";
+import { BlogCTA, BlogHero } from "@/sections/blog";
+import { BlogFeatured } from "@/sections/blog/BlogFeatured";
+import { BlogListing } from "@/sections/blog/BlogListing";
+import { allPosts, latestPost, topBlogs } from "@/constants/blog";
 
 export default function BlogListingPage() {
   return (
-    <div className="flex items-center justify-center gap-4 min-h-screen py-2">
-      <h1>Here is the blog listing page-</h1>
-      <User />
-    </div>
+    <main className="flex mb-12 min-h-screen w-full flex-col items-center align-middle justify-center">
+      <BlogHero />
+      <BlogFeatured latestPost={latestPost} topBlogs={topBlogs} />
+      <BlogListing posts={allPosts} />
+      <BlogCTA />
+    </main>
   );
 }
