@@ -18,6 +18,7 @@ export function Header() {
               alt="Practice by Numbers"
               width={120}
               height={40}
+              loading="eager"
             />
           </span>
         </Link>
