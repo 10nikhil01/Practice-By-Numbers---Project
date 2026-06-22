@@ -1,3 +1,15 @@
+export type NavLink = {
+  label: string;
+  href: string;
+  description?: string;
+};
+
+export type NavGroup = {
+  label: string;
+  href: string;
+  links: NavLink[];
+};
+
 export type BlogPost = {
   id: string;
   title: string;

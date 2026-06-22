@@ -1,6 +1,5 @@
-import Link from "next/link";
-import { NavigationMenuLink } from "../ui";
-import type { NavLink } from "@/constants";
+import { NavigationMenuLink } from "@/components/ui";
+import type { NavLink } from "@/types/home";
 
 export const SimpleColumn = ({
   title,

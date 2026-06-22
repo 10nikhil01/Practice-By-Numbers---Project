@@ -1,14 +1,4 @@
-export type NavLink = {
-  label: string;
-  href: string;
-  description?: string;
-};
-
-export type NavGroup = {
-  label: string;
-  href: string;
-  links: NavLink[];
-};
+import { NavGroup, NavLink } from "@/types/home";
 
 export const solutionsNav: NavGroup[] = [
   {
