@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   publisher: "Practice by Numbers",
 
   icons: {
-    icon: "/favicon.ico",
+    icon: "/logo.png",
     shortcut: "/favicon.ico",
     apple: "/favicon.ico",
   },

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "Get in touch with Practice by Numbers. Speak with our team, request a demo, or learn how our platform can help your dental practice grow.",
 
   alternates: {
-    canonical: "https://practice-by-numbers.vercel.app/contact",
+    canonical: "https://practice-by-numbers.vercel.app/contact-us",
   },
 };
 export default function ContactUsPage() {

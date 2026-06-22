@@ -1,10 +1,77 @@
-import { allPostsCombined } from "@/constants/blog";
-import { BlogPostHero, BlogSidebar } from "@/sections/blogPage";
-import { BlogPostContent } from "@/sections/blogPage/BlogPostContent";
+import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+import { allPostsCombined } from "@/constants/blog";
+
+import {
+  getArticleSchema,
+  getAuthorSchema,
+  getBreadcrumbSchema,
+} from "@/schema/blog";
+
+import { BlogPostHero, BlogSidebar } from "@/sections/blogPage";
+import { BlogPostContent } from "@/sections/blogPage/BlogPostContent";
+
+async function getBlogBySlug(slug: string) {
+  return allPostsCombined.find((post) => post.slug === slug);
+}
+
 export async function generateStaticParams() {
-  return allPostsCombined.map((post) => ({ slug: post.slug }));
+  return allPostsCombined.map((post) => ({
+    slug: post.slug,
+  }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+
+  const blog = await getBlogBySlug(slug);
+
+  if (!blog) {
+    return {};
+  }
+
+  const url = `https://practice-by-numbers.vercel.app/blog/${slug}`;
+
+  return {
+    title: blog.title,
+
+    description: blog.excerpt,
+
+    alternates: {
+      canonical: url,
+    },
+
+    openGraph: {
+      title: blog.title,
+
+      description: blog.excerpt,
+
+      url,
+
+      type: "article",
+
+      images: [
+        {
+          url: blog.thumbnail,
+        },
+      ],
+    },
+
+    twitter: {
+      card: "summary_large_image",
+
+      title: blog.title,
+
+      description: blog.excerpt,
+
+      images: [blog.thumbnail],
+    },
+  };
 }
 
 export default async function BlogSlugPage({
@@ -14,14 +81,24 @@ export default async function BlogSlugPage({
 }) {
   const { slug } = await params;
 
-  const post = allPostsCombined.find((p) => p.slug === slug);
-  if (!post) notFound();
+  const post = await getBlogBySlug(slug);
+
+  if (!post) {
+    notFound();
+  }
 
   const sidebarPosts = allPostsCombined
     .filter((p) => p.slug !== slug)
     .slice(0, 4);
 
-  // Slots
+  const articleSchema = getArticleSchema({
+    blog: post,
+  });
+
+  const breadcrumbSchema = getBreadcrumbSchema(post.title, post.slug);
+
+  const authorSchema = getAuthorSchema("Practice by Numbers");
+
   const hero = (
     <BlogPostHero
       meta={{
@@ -40,9 +117,34 @@ export default async function BlogSlugPage({
   const sidebar = <BlogSidebar posts={sidebarPosts} />;
 
   return (
-    <BlogPostContent hero={hero} sidebar={sidebar}>
-      {/* Main article content — replace with MDX or CMS renderer */}
-      <p>{post.excerpt}</p>
-    </BlogPostContent>
+    <>
+      {/* BlogPosting Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleSchema),
+        }}
+      />
+
+      {/* Breadcrumb Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema),
+        }}
+      />
+
+      {/* Author Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(authorSchema),
+        }}
+      />
+
+      <BlogPostContent hero={hero} sidebar={sidebar}>
+        <p>{post.excerpt}</p>
+      </BlogPostContent>
+    </>
   );
 }
