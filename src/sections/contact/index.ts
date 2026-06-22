@@ -1,1 +1,1 @@
-export * from "@/sections/contact/connect"
+export * from "@/sections/contact/connect";
