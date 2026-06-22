@@ -16,7 +16,7 @@ import Link from "next/link";
 
 export const TrendingInsights = () => {
   return (
-    <section className="py-20 max-w-300 sm:mx-auto max-sm:pl-2">
+    <section className="py-20 max-w-300 sm:mx-auto">
       <div className="container mx-auto">
         {/* Heading */}
         <div className="mb-14 text-center">
@@ -31,7 +31,7 @@ export const TrendingInsights = () => {
             Expert proven tips to grow your practice and run it better.
           </p>
         </div>
-        <div className="mx-auto max-w-dvw w-full sm:w-full sm:max-w-300 sm:pl-5 sm:px-5">
+        <div className="mx-auto max-w-dvw w-full sm:w-full sm:max-w-300 sm:px-5">
           <Carousel
             opts={{
               align: "start",
@@ -39,13 +39,13 @@ export const TrendingInsights = () => {
               containScroll: "trimSnaps",
             }}
           >
-            <CarouselContent className="pb-4 max-sm:max-w-dvw ">
+            <CarouselContent className="pb-4">
               {posts.map((post: BlogPost) => (
                 <CarouselItem
                   key={post.id}
-                  className="sm:basis-1/2 lg:basis-1/3 max-sm:max-w-dvw"
+                  className="basis-full sm:basis-1/2 lg:basis-1/3"
                 >
-                  <Card className="overflow-hidden border max-sm:max-w-sm py-0 hover:shadow-violet-800 shadow-sm h-full">
+                  <Card className="overflow-hidden mx-auto max-sm:w-full border max-sm:max-w-sm py-0 hover:shadow-violet-800 shadow-sm h-full">
                     {/* Image */}
                     <div className="relative xs:h-50 w-full">
                       <Image
