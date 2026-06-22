@@ -1,4 +1,4 @@
-import { homeFaqSchema } from "@/lib/Schema";
+import { homeFaqSchema } from "@/schema/homePage";
 import {
   FirstCTA,
   HeroSection,

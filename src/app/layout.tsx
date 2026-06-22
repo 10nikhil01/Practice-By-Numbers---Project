@@ -1,6 +1,6 @@
 import { Footer } from "@/components/common/Footer";
 import { Header } from "@/components/common/Header";
-import { organizationSchema, websiteSchema } from "@/lib/Schema";
+import { organizationSchema, websiteSchema } from "@/schema/homePage";
 import { cn } from "@/lib/utils";
 import "@/styles/globals.css";
 import { Analytics } from "@vercel/analytics/next";
