@@ -8,30 +8,34 @@ import Link from "next/link";
 
 export const GetConnect = () => {
   return (
-    <section className="w-full">
+    <section className="w-full px-4">
       <div
-        className="rounded-xl md:rounded-2xl p-12 flex max-md:flex-col justify-between items-center"
+        className="rounded-xl md:rounded-2xl p-4 md:p-12 flex max-lg:flex-col justify-between items-center"
         style={{
           background: "linear-gradient(265deg, #4844BE 0.4%, #211F58 92.2%)",
         }}
       >
-        <div className="w-7/10">
-          <h2 className="text-6xl font-light text-white leading-tight">
+        <div className="w-full mb-8 lg:mb-0">
+          <h2 className="md:text-6xl text-4xl font-light text-white leading-tight">
             {ContactUsTitle}
           </h2>
-          <h2 className="text-6xl font-bold text-violet-500 leading-tight mb-3">
+          <h2 className="md:text-6xl text-4xl font-bold text-violet-500 leading-tight mb-3">
             {ContactUsTitleSecond}
           </h2>
-          <p className="text-lg w-3/5 text-justify">{ContactUsDescription}</p>
+          <p className="text-lg w-fit lg:w-3/5">{ContactUsDescription}</p>
         </div>
 
-        <div className="flex flex-col gap-2">
+        <div className="max-lg:w-full flex flex-col gap-1">
           {contactLinks.map(({ icon, text, href }) => (
-            <Link key={text} href={href} className="flex items-center">
-              <div className="w-10 h-10 rounded-full flex items-center justify-center shrink-0">
-                {icon}
-              </div>
-              <span className="text-white text-lg">{text}</span>
+            <Link
+              key={text}
+              href={href}
+              className="flex items-center mb-2 gap-2"
+            >
+              {icon}
+              <span className="text-white text-base sm:text-lg ml-2">
+                {text}
+              </span>
             </Link>
           ))}
         </div>
