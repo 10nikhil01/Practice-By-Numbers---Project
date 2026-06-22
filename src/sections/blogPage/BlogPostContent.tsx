@@ -13,7 +13,7 @@ export const BlogPostContent = ({ hero, sidebar, children }: Props) => {
       {hero}
 
       {/* 2. Content + Sidebar */}
-      <div className="max-w-7xl border-amber-700 border-2 gap-12 mx-4 py-12 mt-4 grid lg:grid-cols-[1fr_300px] items-start">
+      <div className="max-w-7xl gap-12 mx-4 py-12 mt-4 grid lg:grid-cols-[1fr_300px] items-start">
         {/* Main content */}
         <div className="">
           {children}
