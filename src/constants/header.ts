@@ -43,11 +43,6 @@ export const solutionsNav: NavGroup[] = [
     href: "/prm",
     links: [
       {
-        label: "Patient Relationship Management",
-        href: "/prm",
-        description: "Everything your practice needs to stay patient-first",
-      },
-      {
         label: "Patient Reminders",
         href: "/prm/patient-reminders",
         description: "Seamless reminders that sync with your PMS",
@@ -58,38 +53,14 @@ export const solutionsNav: NavGroup[] = [
         description: "Build a practice where patients actually show up",
       },
       {
-        label: "Patient Follow Up Campaigns",
-        href: "/prm/patient-follow-up-campaigns",
-        description: "Never lose track of patients again",
-      },
-      {
         label: "Two Way Patient Texting",
         href: "/prm/two-way-patient-texting",
         description: "Messaging that works both ways",
       },
       {
-        label: "Online Appointment Booking",
-        href: "/prm/online-appointment-booking",
-        description: "Syncs with your PMS to read and write appointments",
-      },
-      {
         label: "Review Management",
         href: "/prm/patient-reviews",
         description: "Boost your practice with positive reviews",
-      },
-      {
-        label: "PbN Voice",
-        href: "/prm/pbn-voice",
-        description: "The smarter phone system for dental practices",
-      },
-      {
-        label: "Patient Portal",
-        href: "/prm/patient-portal",
-        description: "Give patients complete control over their care",
-      },
-      {
-        label: "ROI Calculator",
-        href: "/roi-calculator/patient-relationship-management",
       },
     ],
   },
@@ -97,16 +68,6 @@ export const solutionsNav: NavGroup[] = [
     label: "Operational Efficiency",
     href: "/operational-efficiency",
     links: [
-      {
-        label: "Operational Efficiency",
-        href: "/operational-efficiency",
-        description: "Save hours daily with connected workflows",
-      },
-      {
-        label: "PbN Payments Suite",
-        href: "/pbn-payments-suite",
-        description: "Simplify dental payments with one smart platform",
-      },
       {
         label: "Patient Flow",
         href: "/pbn-payments-suite/patient-flow",
@@ -123,14 +84,6 @@ export const solutionsNav: NavGroup[] = [
         description: "Verify patients in advance, reduce denials",
       },
       {
-        label: "Online Appointment Booking",
-        href: "/operational-efficiency/online-appointment-booking",
-      },
-      {
-        label: "Advanced Task Management",
-        href: "/operational-efficiency/advanced-task-management",
-      },
-      {
         label: "Grow App",
         href: "/grow-app",
         description: "Manage your practice, anytime, anywhere",
@@ -139,10 +92,6 @@ export const solutionsNav: NavGroup[] = [
         label: "Daily Huddle",
         href: "/operational-efficiency/daily-huddle",
         description: "Daily huddles that drive results",
-      },
-      {
-        label: "ROI Calculator",
-        href: "/roi-calculator/operational-efficiency",
       },
     ],
   },
@@ -165,7 +114,6 @@ export const solutionsNav: NavGroup[] = [
         href: "/smart-form/kiosk-check-in",
         description: "Power up your front office with smart kiosk check-in",
       },
-      { label: "ROI Calculator", href: "/roi-calculator/smart-forms" },
     ],
   },
   {
@@ -192,7 +140,6 @@ export const solutionsNav: NavGroup[] = [
         href: "/pbn-ai/intellisuite",
         description: "All-in-one AI engine for dental operations",
       },
-      { label: "ROI Calculator", href: "/roi-calculator/pbn-ai" },
     ],
   },
   {
@@ -223,22 +170,6 @@ export const solutionsNav: NavGroup[] = [
         label: "Webchat",
         href: "/dental-marketing-suite/webchat",
         description: "Connect with patients on your website",
-      },
-      {
-        label: "Custom Campaigns",
-        href: "/dental-marketing-suite/custom-campaigns",
-      },
-      {
-        label: "Review Management",
-        href: "/dental-marketing-suite/review-management",
-      },
-      {
-        label: "Online Appointment Booking",
-        href: "/dental-marketing-suite/online-appointment-booking",
-      },
-      {
-        label: "ROI Calculator",
-        href: "/roi-calculator/dental-marketing-suite",
       },
     ],
   },
@@ -271,7 +202,6 @@ export const solutionsNav: NavGroup[] = [
         href: "/pbn-payments-suite/pbn-zeropay",
         description: "Eliminate credit card processing fees",
       },
-      { label: "ROI Calculator", href: "/roi-calculator/pbn-payments-suite" },
     ],
   },
   {
@@ -283,7 +213,6 @@ export const solutionsNav: NavGroup[] = [
         href: "/pbn-voice",
         description: "A better call experience for you and your patients",
       },
-      { label: "ROI Calculator", href: "/roi-calculator/pbn-voice" },
     ],
   },
 ];

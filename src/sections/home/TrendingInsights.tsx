@@ -16,8 +16,8 @@ import Link from "next/link";
 
 export const TrendingInsights = () => {
   return (
-    <section className="py-20 max-w-300 mx-auto">
-      <div className="container mx-auto px-4">
+    <section className="py-20 max-w-300 sm:mx-auto max-sm:pl-2">
+      <div className="container mx-auto">
         {/* Heading */}
         <div className="mb-14 text-center">
           <h2 className="text-4xl md:text-6xl font-bold tracking-tight">
@@ -27,11 +27,11 @@ export const TrendingInsights = () => {
             </span>
           </h2>
 
-          <p className="mt-4 text-muted-foreground text-lg">
+          <p className="mt-4 text-muted-foreground text-lg max-sm:px-4">
             Expert proven tips to grow your practice and run it better.
           </p>
         </div>
-        <div className="mx-auto max-w-sm sm:w-full sm:max-w-300 pl-5 sm:px-5">
+        <div className="mx-auto max-w-dvw w-full sm:w-full sm:max-w-300 sm:pl-5 sm:px-5">
           <Carousel
             opts={{
               align: "start",
@@ -39,11 +39,11 @@ export const TrendingInsights = () => {
               containScroll: "trimSnaps",
             }}
           >
-            <CarouselContent className="pb-4">
+            <CarouselContent className="pb-4 max-sm:max-w-dvw ">
               {posts.map((post: BlogPost) => (
                 <CarouselItem
                   key={post.id}
-                  className="basis-1/2 sm:basis-1/2 lg:basis-1/3"
+                  className="sm:basis-1/2 lg:basis-1/3 max-sm:max-w-dvw"
                 >
                   <Card className="overflow-hidden border max-sm:max-w-sm py-0 hover:shadow-violet-800 shadow-sm h-full">
                     {/* Image */}
@@ -85,8 +85,8 @@ export const TrendingInsights = () => {
               ))}
             </CarouselContent>
 
-            <CarouselPrevious className="-left-4" />
-            <CarouselNext className="-right-4" />
+            <CarouselPrevious className="-left-4 max-sm:hidden" />
+            <CarouselNext className="-right-4 max-sm:hidden" />
           </Carousel>
         </div>
       </div>

@@ -139,7 +139,6 @@ export const solutionsColumns: FooterColumn[] = [
         label: "Enterprise Dashboard",
         href: "/business-analytics/enterprise-dashboard",
       },
-      { label: "ROI Calculator", href: "/roi-calculator/business-analytics" },
     ],
   },
   {
@@ -149,7 +148,6 @@ export const solutionsColumns: FooterColumn[] = [
       { label: "Call AI", href: "/pbn-ai/call-ai" },
       { label: "Ops AI", href: "/pbn-ai/ops-ai" },
       { label: "IntelliSuite", href: "/pbn-ai/intellisuite" },
-      { label: "ROI Calculator", href: "/roi-calculator/pbn-ai" },
     ],
   },
   {
@@ -174,43 +172,6 @@ export const solutionsColumns: FooterColumn[] = [
       { label: "PbN Voice", href: "/prm/pbn-voice" },
       { label: "Review Management", href: "/prm/patient-reviews" },
       { label: "Patient Portal", href: "/prm/patient-portal" },
-      {
-        label: "ROI Calculator",
-        href: "/roi-calculator/patient-relationship-management",
-      },
-    ],
-  },
-  {
-    title: "Operational Efficiency",
-    links: [
-      { label: "Operational Efficiency", href: "/operational-efficiency" },
-      {
-        label: "PbN Payments Suite",
-        href: "/operational-efficiency/pbn-payments-suite",
-      },
-      { label: "Patient Flow", href: "/operational-efficiency/patient-flow" },
-      {
-        label: "Forms and Kiosk",
-        href: "/operational-efficiency/forms-and-kiosk",
-      },
-      {
-        label: "Insurance Verification",
-        href: "/operational-efficiency/insurance-verification",
-      },
-      {
-        label: "Online Appointment Booking",
-        href: "/operational-efficiency/online-appointment-booking",
-      },
-      {
-        label: "Advanced Task Management",
-        href: "/operational-efficiency/advanced-task-management",
-      },
-      { label: "Daily Huddle", href: "/operational-efficiency/daily-huddle" },
-      { label: "Grow App", href: "/grow-app" },
-      {
-        label: "ROI Calculator",
-        href: "/roi-calculator/operational-efficiency",
-      },
     ],
   },
   {
@@ -233,7 +194,6 @@ export const solutionsColumns: FooterColumn[] = [
       },
       { label: "Payment Plans", href: "/pbn-payments-suite/payment-plans" },
       { label: "PbN ZeroPay", href: "/pbn-payments-suite/pbn-zeropay" },
-      { label: "ROI Calculator", href: "/roi-calculator/pbn-payments-suite" },
     ],
   },
   {
@@ -242,33 +202,6 @@ export const solutionsColumns: FooterColumn[] = [
       { label: "Smart Forms", href: "/smart-form" },
       { label: "Digital Forms", href: "/smart-form/digital-forms" },
       { label: "Kiosk Check In", href: "/smart-form/kiosk-check-in" },
-      { label: "ROI Calculator", href: "/roi-calculator/smart-forms" },
-    ],
-  },
-  {
-    title: "Dental Marketing",
-    links: [
-      { label: "Dental Marketing Suite", href: "/dental-marketing-suite" },
-      { label: "Marketing IQ", href: "/dental-marketing-suite/marketing-iq" },
-      { label: "Call Tracking", href: "/dental-marketing-suite/call-tracking" },
-      { label: "Marketing ROI", href: "/dental-marketing-suite/marketing-roi" },
-      { label: "Webchat", href: "/dental-marketing-suite/webchat" },
-      {
-        label: "Custom Campaigns",
-        href: "/dental-marketing-suite/custom-campaigns",
-      },
-      {
-        label: "Review Management",
-        href: "/dental-marketing-suite/review-management",
-      },
-      {
-        label: "Online Appointment Booking",
-        href: "/dental-marketing-suite/online-appointment-booking",
-      },
-      {
-        label: "ROI Calculator",
-        href: "/roi-calculator/dental-marketing-suite",
-      },
     ],
   },
 ];
