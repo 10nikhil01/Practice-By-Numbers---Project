@@ -234,3 +234,31 @@ export const heroStats = [
     label: "More Chairs Filled.",
   },
 ];
+
+export const homeFAQs = [
+  {
+    question: "What is Practice by Numbers?",
+    answer:
+      "Practice by Numbers is a dental practice growth platform that helps practices improve analytics, patient communication, marketing performance, scheduling, payments, and operational efficiency from a single platform.",
+  },
+  {
+    question: "How does Practice by Numbers help dental practices?",
+    answer:
+      "Practice by Numbers helps dental practices increase revenue, improve patient retention, automate workflows, enhance communication, and make data-driven decisions through real-time analytics and reporting.",
+  },
+  {
+    question: "Which PMS systems does Practice by Numbers support?",
+    answer:
+      "Practice by Numbers integrates with leading dental practice management systems including Dentrix, Dentrix Ascend, Eaglesoft, Open Dental, Practice-Web, and other major PMS providers.",
+  },
+  {
+    question: "Can Practice by Numbers improve patient retention?",
+    answer:
+      "Yes. Practice by Numbers provides tools for patient communication, recall management, appointment reminders, reputation management, and engagement tracking to help improve patient retention.",
+  },
+  {
+    question: "Does Practice by Numbers integrate with Dentrix?",
+    answer:
+      "Yes. Practice by Numbers integrates with Dentrix and several other PMS platforms, allowing practices to centralize patient data, reporting, communication, and operational insights.",
+  },
+];
