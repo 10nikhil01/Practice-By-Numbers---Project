@@ -16,9 +16,9 @@ export const GetConnect = () => {
         }}
       >
         <div className="w-full mb-8 lg:mb-0">
-          <h2 className="md:text-6xl text-4xl font-light text-white leading-tight">
+          <h1 className="md:text-6xl text-4xl font-light text-white leading-tight">
             {ContactUsTitle}
-          </h2>
+          </h1>
           <h2 className="md:text-6xl text-4xl font-bold text-violet-500 leading-tight mb-3">
             {ContactUsTitleSecond}
           </h2>
