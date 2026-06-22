@@ -4,7 +4,7 @@ import Link from "next/link";
 export const SecondCTA = () => {
   return (
     <div className="border-b min-w-full bg-background border-white/10 p-5">
-      <div className="flex w-full flex-col bg-[#191E4A] rounded-2xl items-center gap-4  max-sm:p-6 p-12 text-center sm:flex-row sm:justify-between sm:text-left">
+      <div className="flex w-full flex-col bg-[#191E4A] rounded-xl md:rounded-2xl items-center gap-4  max-sm:p-6 p-12 text-center sm:flex-row sm:justify-between sm:text-left">
         <div>
           <h2 className="text-2xl font-bold text-white sm:text-4xl">
             Get started from just $249/month.

@@ -4,7 +4,7 @@ import Link from "next/link";
 export const ThirdCTA = () => {
   return (
     <div className="border-b min-w-full bg-background border-white/10 p-5">
-      <div className="mx-auto flex max-w-300 flex-col bg-[#191E4A] rounded-2xl items-center gap-4  max-sm:p-6 p-12 text-center sm:flex-row sm:justify-between sm:text-left">
+      <div className="mx-auto flex max-w-300 flex-col bg-[#191E4A] rounded-xl md:rounded-2xl items-center gap-4  max-sm:p-6 p-12 text-center sm:flex-row sm:justify-between sm:text-left">
         <div>
           <h2 className="text-2xl font-bold text-white sm:text-4xl">
             Run a more organized, profitable practice.

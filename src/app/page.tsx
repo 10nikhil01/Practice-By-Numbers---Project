@@ -12,9 +12,9 @@ export default function HomePage() {
     <main className="flex max-w-300 min-h-screen flex-col items-center align-middle justify-center">
       <HeroSection />
       <FirstCTA />
+      <TrendingInsights />
       <SecondCTA />
       <LatestInnovations />
-      <TrendingInsights />
       <ThirdCTA />
     </main>
   );
