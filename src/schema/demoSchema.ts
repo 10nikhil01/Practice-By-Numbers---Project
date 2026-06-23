@@ -4,12 +4,12 @@ export const webPageSchema = {
   name: "Request a Demo | Practice by Numbers",
   description:
     "Book a personalized 1:1 demo with a Practice Advisor to see how Practice by Numbers can streamline your dental practice operations.",
-  url: "https://practicebynumbers.com/request-demo",
+  url: "https://practice-by-numbers.vercel.app/request-demo",
   inLanguage: "en-US",
   isPartOf: {
     "@type": "WebSite",
     name: "Practice by Numbers",
-    url: "https://practicebynumbers.com",
+    url: "https://practice-by-numbers.vercel.app",
   },
   breadcrumb: {
     "@type": "BreadcrumbList",
@@ -18,13 +18,13 @@ export const webPageSchema = {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://practicebynumbers.com",
+        item: "https://practice-by-numbers.vercel.app",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Request a Demo",
-        item: "https://practicebynumbers.com/request-demo",
+        item: "https://practice-by-numbers.vercel.app/request-demo",
       },
     ],
   },
@@ -39,7 +39,7 @@ export const serviceSchema = {
   provider: {
     "@type": "Organization",
     name: "Practice by Numbers",
-    url: "https://practicebynumbers.com",
+    url: "https://practice-by-numbers.vercel.app",
   },
   serviceType: "Dental Practice Management Software",
   areaServed: {
@@ -111,7 +111,7 @@ export const softwareSchema = {
   name: "Practice by Numbers",
   applicationCategory: "BusinessApplication",
   operatingSystem: "Web",
-  url: "https://practicebynumbers.com",
+  url: "https://practice-by-numbers.vercel.app",
   description:
     "Dental practice management software that helps practices reduce no-shows, automate patient communication, and grow revenue.",
   offers: {

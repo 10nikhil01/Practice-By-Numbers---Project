@@ -23,11 +23,11 @@ export const metadata: Metadata = {
     title: "Request a Demo | Practice by Numbers",
     description:
       "Book a personalized 1:1 demo with a Practice Advisor. See how Practice by Numbers simplifies dental practice management starting from $249/mo.",
-    url: "https://practicebynumbers.com/request-demo",
+    url: "https://practice-by-numbers.vercel.app/request-demo",
     siteName: "Practice by Numbers",
     images: [
       {
-        url: "https://practicebynumbers.com/request-demo/opengraph-image.png",
+        url: "https://practice-by-numbers.vercel.app/request-demo/opengraph-image.png",
         width: 1200,
         height: 630,
         alt: "Practice by Numbers - Request a Demo",
@@ -41,11 +41,13 @@ export const metadata: Metadata = {
     title: "Request a Demo | Practice by Numbers",
     description:
       "Book a personalized 1:1 demo with a Practice Advisor. See how Practice by Numbers simplifies dental practice management.",
-    images: ["https://practicebynumbers.com/request-demo/opengraph-image.png"],
+    images: [
+      "https://practice-by-numbers.vercel.app/request-demo/opengraph-image.png",
+    ],
     site: "@practicebynumbers",
   },
   alternates: {
-    canonical: "https://practicebynumbers.com/request-demo",
+    canonical: "https://practice-by-numbers.vercel.app/request-demo",
   },
   robots: {
     index: true,
