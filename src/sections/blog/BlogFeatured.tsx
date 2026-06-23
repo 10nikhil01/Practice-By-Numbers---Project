@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { TopBlogRow } from "@/sections/blog";
-import type { BlogPost } from "@/types";
+import type { BlogPost } from "@/types/blog";
 import { Clock } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";

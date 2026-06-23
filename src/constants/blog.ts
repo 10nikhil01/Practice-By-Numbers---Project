@@ -185,6 +185,69 @@ export const allPosts: BlogPost[] = [
       "https://practicenumbers.com/wp-content/uploads/2026/02/PbN_Blog_Payment_Plans_Thumbnail.jpg",
     href: "/blog/dental-morning-huddles",
   },
+  {
+    slug: "automation-vs-human",
+    title: "Should Dental Practices Automate or Keep Things Human?",
+    excerpt: "The question is popping up...",
+    date: "June 10, 2026",
+    thumbnail:
+      "https://practicenumbers.com/wp-content/uploads/2026/06/Digital-marketing-tactics-thumbnail-768x466.jpg",
+    href: "/blog/automation-vs-human",
+  },
+  {
+    slug: "patient-journey-tracking",
+    title: "End-to-End Patient Journey Tracking for Dental Practices",
+    excerpt: "Most dental practices track clicks...",
+    date: "June 9, 2026",
+    thumbnail:
+      "https://practicenumbers.com/wp-content/uploads/2026/06/Call-scoring-playbook-Thumbnail-768x466.jpg",
+    href: "/blog/patient-journey-tracking",
+  },
+  {
+    slug: "digital-marketing",
+    title: "Best Digital Marketing Tactics for Dentists",
+    excerpt: "Your marketing budget is limited...",
+    date: "June 12, 2026",
+    thumbnail:
+      "https://practicenumbers.com/wp-content/uploads/2026/06/Best-dental-social-media-marketing-practices-Thumbnail-768x466.jpg",
+    href: "/blog/digital-marketing",
+  },
+  {
+    slug: "ai-dental",
+    title: "How AI Is Transforming Modern Dental Practices",
+    excerpt: "AI is changing patient engagement...",
+    date: "June 15, 2026",
+    thumbnail:
+      "https://practicenumbers.com/wp-content/uploads/2026/06/PbN_Blog_Open_Dental_Practice_By_Numbers-768x466.jpg",
+    href: "/blog/ai-dental",
+  },
+  {
+    slug: "patient-journey-tracking",
+    title: "End-to-End Patient Journey Tracking for Dental Practices",
+    excerpt: "Most dental practices track clicks...",
+    date: "June 9, 2026",
+    thumbnail:
+      "https://practicenumbers.com/wp-content/uploads/2026/06/Call-scoring-playbook-Thumbnail-768x466.jpg",
+    href: "/blog/patient-journey-tracking",
+  },
+  {
+    slug: "digital-marketing",
+    title: "Best Digital Marketing Tactics for Dentists",
+    excerpt: "Your marketing budget is limited...",
+    date: "June 12, 2026",
+    thumbnail:
+      "https://practicenumbers.com/wp-content/uploads/2026/06/Best-dental-social-media-marketing-practices-Thumbnail-768x466.jpg",
+    href: "/blog/digital-marketing",
+  },
+  {
+    slug: "ai-dental",
+    title: "How AI Is Transforming Modern Dental Practices",
+    excerpt: "AI is changing patient engagement...",
+    date: "June 15, 2026",
+    thumbnail:
+      "https://practicenumbers.com/wp-content/uploads/2026/06/PbN_Blog_Open_Dental_Practice_By_Numbers-768x466.jpg",
+    href: "/blog/ai-dental",
+  },
 ];
 
 // All posts combined for easy lookup

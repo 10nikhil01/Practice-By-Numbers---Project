@@ -9,10 +9,10 @@ import {
   PaginationLink,
   PaginationNext,
 } from "@/components/ui";
-import type { BlogPost } from "@/types";
+import { BlogCard } from "@/sections/blog";
+import type { BlogPost } from "@/types/blog";
 import { Search } from "lucide-react";
 import { SetStateAction, useState } from "react";
-import { BlogCard } from "@/sections/blog";
 
 const POSTS_PER_PAGE = 7;
 
