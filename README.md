@@ -147,17 +147,6 @@ npm run lint
 
 ---
 
-## Environment Variables
-
-Create a `.env.local` file in the root:
-
-```env
-NEXT_PUBLIC_SITE_URL=https://practicebynumbers.com
-NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX         # Google Analytics
-NEXT_PUBLIC_RECAPTCHA_SITE_KEY=xxx      # reCAPTCHA v2 site key
-RECAPTCHA_SECRET_KEY=xxx                # reCAPTCHA v2 secret (server-side)
-```
-
 ---
 
 ## shadcn Components Used
