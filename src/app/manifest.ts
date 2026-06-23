@@ -32,7 +32,7 @@ export default function manifest(): MetadataRoute.Manifest {
         name: "Contact Us",
         short_name: "Contact",
         description: "Get in touch with the Practice by Numbers team",
-        url: "/contact",
+        url: "/-uscontact",
         icons: [
           {
             src: "/logo.png",

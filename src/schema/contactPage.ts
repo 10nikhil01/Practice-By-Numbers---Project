@@ -5,7 +5,7 @@ export const contactPageSchema = {
 
   name: "Contact Practice by Numbers",
 
-  url: "https://yourdomain.com/contact",
+  url: "https://practice-by-numbers.vercel.app/contact-us",
 };
 
 export const contactOrganizationSchema = {
@@ -15,7 +15,7 @@ export const contactOrganizationSchema = {
 
   name: "Practice by Numbers",
 
-  url: "https://yourdomain.com",
+  url: "https://practice-by-numbers.vercel.app/contact-us",
 
   contactPoint: {
     "@type": "ContactPoint",

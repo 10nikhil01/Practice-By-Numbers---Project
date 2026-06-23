@@ -6,6 +6,7 @@ import {
 } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "@/components/ui";
 
 function FooterColumnBlock({ column }: { column: FooterColumn }) {
   return (
@@ -95,10 +96,13 @@ export function Footer() {
         />
 
         {/* Copyright */}
-        <p className="text-center text-xs sm:text-base leading-relaxed text-white">
-          Copyright © {new Date().getFullYear()}. PracticebyNumbers. All rights
-          reserved.
-        </p>
+        <div className="flex w-full max-md:flex-col items-center justify-between">
+          <p className="text-center text-xs sm:text-base leading-relaxed text-white flex-1">
+            Copyright © {new Date().getFullYear()}. PracticebyNumbers. All
+            rights reserved.
+          </p>
+          <Link href="/sitemap.xml" className="font-light max-md:text-xs mt-3">Sitemap</Link>
+        </div>
       </div>
     </footer>
   );
