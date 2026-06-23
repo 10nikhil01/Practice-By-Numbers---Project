@@ -31,7 +31,7 @@ export const HeroSection = () => {
             </p>
 
             <Link
-              href="/demo"
+              href="/request-demo"
               className="mt-8 inline-flex h-10 items-center justify-center rounded-sm bg-[#5A54F9] px-3 text-base font-semibold text-white transition-all hover:opacity-90"
             >
               Book a Demo

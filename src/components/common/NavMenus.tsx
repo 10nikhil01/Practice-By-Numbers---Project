@@ -30,7 +30,7 @@ export const NavMenus = () => {
             <div className="grid min-w-205 grid-cols-4 gap-6 p-6">
               {solutionsNav.map((group) => (
                 <SimpleColumn
-                  key={group.href}
+                  key={group.label}
                   title={group.label}
                   links={group.links}
                 />
@@ -44,7 +44,7 @@ export const NavMenus = () => {
           <NavigationMenuContent className="min-w-150">
             <div className="grid w-full grid-cols-2 gap-1 p-4">
               {useCasesNav.map((link) => (
-                <NavigationMenuLink asChild key={link.href}>
+                <NavigationMenuLink asChild key={link.label}>
                   <Link
                     href={link.href}
                     className="flex flex-col items-start rounded-md p-3 hover:bg-accent"
@@ -63,7 +63,7 @@ export const NavMenus = () => {
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
             <Link
-              href="/pricing"
+              href="/"
               className="inline-flex h-10 items-center px-4 py-2 text-sm font-medium"
             >
               Pricing

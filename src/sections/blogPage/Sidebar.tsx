@@ -13,7 +13,7 @@ export const BlogSidebar = ({ posts }: { posts: BlogPost[] }) => {
         <div className="flex flex-col gap-2">
           {posts.map((post) => (
             <Link
-              key={post.href}
+              key={post.title}
               href={post.href}
               className="flex gap-3 border hover:bg-background bg-card border-border py-2 px-3 rounded-lg"
             >

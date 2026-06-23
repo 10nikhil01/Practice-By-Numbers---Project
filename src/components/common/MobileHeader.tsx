@@ -60,13 +60,13 @@ export const MobileHeader = () => {
             <AccordionContent>
               <div className="space-y-4">
                 {solutionsNav.map((group) => (
-                  <div key={group.href}>
+                  <div key={group.label}>
                     <p className="mb-1 text-xs font-semibold uppercase text-muted-foreground">
                       {group.label}
                     </p>
                     <ul className="space-y-1">
                       {group.links.map((link) => (
-                        <li key={link.href}>
+                        <li key={link.label}>
                           <Link
                             href={link.href}
                             onClick={() => setMobileOpen(false)}
@@ -90,7 +90,7 @@ export const MobileHeader = () => {
             <AccordionContent>
               <ul className="space-y-1">
                 {useCasesNav.map((link) => (
-                  <li key={link.href}>
+                  <li key={link.label}>
                     <Link
                       href={link.href}
                       onClick={() => setMobileOpen(false)}
@@ -111,7 +111,7 @@ export const MobileHeader = () => {
             <AccordionContent>
               <ul className="space-y-1">
                 {companyNav.map((link) => (
-                  <li key={link.href}>
+                  <li key={link.label}>
                     <Link
                       href={link.href}
                       onClick={() => setMobileOpen(false)}
@@ -132,7 +132,7 @@ export const MobileHeader = () => {
             <AccordionContent>
               <ul className="space-y-1">
                 {compareNav.map((link) => (
-                  <li key={link.href}>
+                  <li key={link.label}>
                     <Link
                       href={link.href}
                       onClick={() => setMobileOpen(false)}
@@ -153,7 +153,7 @@ export const MobileHeader = () => {
             <AccordionContent>
               <ul className="space-y-1">
                 {resourcesNav.map((link) => (
-                  <li key={link.href}>
+                  <li key={link.label}>
                     <Link
                       href={link.href}
                       onClick={() => setMobileOpen(false)}
@@ -170,7 +170,7 @@ export const MobileHeader = () => {
 
         <div className="mt-0 space-y-3 border-t pt-4">
           <Link
-            href="/pricing"
+            href="/"
             onClick={() => setMobileOpen(false)}
             className="block text-sm font-medium"
           >

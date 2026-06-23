@@ -15,7 +15,7 @@ export const SimpleColumn = ({
       </p>
       <ul className="space-y-1">
         {links.map((link) => (
-          <li key={link.href} className="w-4/5">
+          <li key={link.label} className="w-4/5">
             <NavigationMenuLink
               href={link.href}
               className="block rounded-md px-2 py-1.5 text-sm text-foreground hover:bg-accent hover:text-accent-foreground"

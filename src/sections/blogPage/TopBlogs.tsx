@@ -12,7 +12,7 @@ export const TopBlogs = ({ posts }: { posts: BlogPost[] }) => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {posts.map((post) => (
             <div
-              key={post.href}
+              key={post.title}
               className="flex flex-col rounded-xl border border-border bg-card overflow-hidden shadow-sm"
             >
               <div className="aspect-video overflow-hidden">

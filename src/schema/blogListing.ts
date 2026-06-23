@@ -8,7 +8,6 @@ export const blogListingSchema = {
   url: "https://practice-by-numbers.vercel.app/blog",
 
   description: "Dental practice growth resources and expert insights.",
-
   publisher: {
     "@type": "Organization",
 

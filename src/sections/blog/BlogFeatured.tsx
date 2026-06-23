@@ -53,7 +53,7 @@ export const BlogFeatured = ({
         <h2 className="text-xl font-bold text-foreground mb-5">Top Blogs</h2>
         <div className="flex flex-col justify-between items-stretch gap-4">
           {topBlogs.map((post) => (
-            <TopBlogRow key={post.href} post={post} />
+            <TopBlogRow key={post.title} post={post} />
           ))}
         </div>
       </div>
