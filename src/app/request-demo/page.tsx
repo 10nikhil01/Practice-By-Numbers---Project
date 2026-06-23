@@ -4,7 +4,6 @@ import {
   softwareSchema,
   webPageSchema,
 } from "@/schema/demoSchema";
-import { homeFaqSchema } from "@/schema/homePage";
 import { CustomerReviews, DemoForm, DemoHero } from "@/sections/demo";
 import { Metadata } from "next";
 

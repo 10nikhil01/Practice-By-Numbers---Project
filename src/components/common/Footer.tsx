@@ -6,7 +6,6 @@ import {
 } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "@/components/ui";
 
 function FooterColumnBlock({ column }: { column: FooterColumn }) {
   return (
@@ -101,7 +100,9 @@ export function Footer() {
             Copyright © {new Date().getFullYear()}. PracticebyNumbers. All
             rights reserved.
           </p>
-          <Link href="/sitemap.xml" className="font-light max-md:text-xs mt-3">Sitemap</Link>
+          <Link href="/sitemap.xml" className="font-light max-md:text-xs mt-3">
+            Sitemap
+          </Link>
         </div>
       </div>
     </footer>

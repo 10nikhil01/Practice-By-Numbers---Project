@@ -206,6 +206,7 @@ export const DemoForm = () => {
       setServerError(
         "Something went wrong. Please try again or contact support.",
       );
+      console.log("err-", err);
     }
   };
 
