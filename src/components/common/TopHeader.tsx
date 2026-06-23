@@ -13,13 +13,13 @@ export const TopHeader = () => {
           +1 866-216-8416
         </a>
         <Link
-          href="https://app.practicenumbers.com/forms"
+          href="/"
           className="hover:text-white/80"
         >
           Kiosk
         </Link>
         <Link
-          href="https://app.practicenumbers.com/accounts/login/"
+          href="/"
           className="hover:text-white/80"
         >
           Login
