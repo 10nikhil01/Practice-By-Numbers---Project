@@ -79,10 +79,7 @@ export const HeroSection = () => {
           <div className="mt-8 text-center">
             <p className="text-base sm:text-lg text-white/90">
               See how practices achieve measurable results with PbN.{" "}
-              <Link
-                href="/success-stories"
-                className="font-semibold text-white text-nowrap"
-              >
+              <Link href="/" className="font-semibold text-white text-nowrap">
                 Read Success Stories &gt;
               </Link>
             </p>

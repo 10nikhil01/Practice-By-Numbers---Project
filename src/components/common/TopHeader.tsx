@@ -12,16 +12,10 @@ export const TopHeader = () => {
           <Phone className="h-3.5 w-3.5" />
           +1 866-216-8416
         </a>
-        <Link
-          href="https://app.practicenumbers.com/forms"
-          className="hover:text-white/80"
-        >
+        <Link href="/" className="hover:text-white/80">
           Kiosk
         </Link>
-        <Link
-          href="https://app.practicenumbers.com/accounts/login/"
-          className="hover:text-white/80"
-        >
+        <Link href="/" className="hover:text-white/80">
           Login
         </Link>
         <Link
