@@ -65,6 +65,7 @@ export const CustomerReviews = () => {
             alt="G2 5 out of 5 stars"
             width={800}
             height={100}
+            fetchPriority="high"
             className="h-16 object-contain"
           />
         </div>
